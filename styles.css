@@ -1,0 +1,252 @@
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior:smooth;
+}
+p{
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    color: rgb(1, 1, 1);
+}
+.logo{
+   /* color: aliceblue*/;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span{
+    color: #4ff800;
+}
+.navbar{
+    display: flex;
+    position: relative;  
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+   /*color: blue;*/ 
+   text-decoration: none;
+   margin-left: 30px;
+   font-weight:700 ;
+}
+.reservation{
+    padding: 10px 20px;
+    background:rgb(85, 247, 4) ;
+    margin-top: -10px;
+}
+.reservation:hover{
+background: #4ff800;
+transition: ease-out;
+}
+header .navbar li a :hover{
+    color: #f8e007;
+    border-bottom: 2px solid;color: #ffe603;
+}
+.baniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(stairs-restaurant-man-791810.jpg) ;
+    background-size:cover ;
+}
+.baniere .contenue{
+    max-width: 70%;
+    text-align: center;
+}
+.baniere .contenue h2{
+    color: aliceblue;
+    font-size: 3em;
+    text-transform: capitalize
+}
+.contenue p:nth-child(2){
+    color: rgb(255, 218, 69);
+    font-size: 1.2em; 
+}
+.btn1{
+    font-size: 1em;
+    color: antiquewhite;
+    background: #4ff800;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin: left 10px; ;
+}
+.btn2{
+    font-size: 1em;
+    color: antiquewhite;
+    background: #0122f9;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin: left 10px; ;
+}
+.btn1:hover{
+letter-spacing: 4px;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.row .col50{
+    position:relative;
+    width:48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2{
+    margin: bottom 20px;
+}
+.titre-texte{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: capitalize;
+} 
+.titre-texte span{
+    color: rgb(68, 234, 12);
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.row .col50 img{
+    height: 455px;
+    width: 500px;
+    position: relative;
+}
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    margin-top: -100px;
+}
+
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .contenu .box{
+    width: 350px;
+   margin-top: 20px; 
+   border: 20px solid #f8e007;
+   box-shadow: 20px 15px 40px rgb(0, 0, 0);
+}
+
+.menu .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left:0;
+    width: 100;
+}
+footer{
+   padding: 10px 20px;
+    background:rgba(167, 151, 4, 0.793) ;
+    margin-top: -10px;
+    font-size: 30px;
+   box-shadow: 20px 15px 40px rgb(0, 0, 0);
+   border-radius: 25px;
+   white-space: 100px;
+} 
+
+.contact{
+background-image: url(dessert.jpg) ;
+background-size:cover ;
+box-shadow: 2px 2px 12px; color: black;
+width: 100%;
+background-position: unset;
+}
+
+.contcatform{
+    padding: 75px 50px;
+    background:#fff;
+    box-shadow: 5px 5px;color: black;
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+.contcatform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contcatform h3{
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.contcatform .inputboite,
+.contcatform .inputboite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight:300;
+    resize:none ;
+}
+
+.contcatform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: #dfdfd9;
+    display: inline-block;
+    cursor:pointer ;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
